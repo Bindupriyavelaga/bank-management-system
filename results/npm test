@@ -1,0 +1,72 @@
+PS C:\Users\velag\bank-management-system-app>
+PS C:\Users\velag\bank-management-system-app> npm test
+
+> bank-management-system-app@1.0.0 test   
+> jest
+
+  console.log
+    Server running on port 3000
+
+      at Server.log (server.js:20:11)     
+
+  console.log
+    Account created: { id: 1, name: 'Test User', balance: 100 }
+
+      at log (controllers/accountController.js:12:11)
+
+  console.log                             
+    Account created: { id: 2, name: 'Test User', balance: 100 }
+
+      at log (controllers/accountController.js:12:11)
+
+  console.log
+    Deposit request: { id: 2, amount: 50 }
+
+      at log (controllers/accountController.js:19:11)
+
+  console.log                             
+    Account after deposit: { id: 2, name: 'Test User', balance: 150 }
+
+      at log (controllers/accountController.js:25:11)
+
+  console.log                             
+    Account created: { id: 3, name: 'Test User', balance: 100 }
+
+      at log (controllers/accountController.js:12:11)
+
+  console.log
+    Withdraw request: { id: 3, amount: 50 }
+
+      at log (controllers/accountController.js:32:11)
+
+  console.log                             
+    Account after withdrawal: { id: 3, name: 'Test User', balance: 50 }
+
+      at log (controllers/accountController.js:42:11)
+
+  console.log                             
+    Account created: { id: 4, name: 'Test User', balance: 100 }
+
+      at log (controllers/accountController.js:12:11)
+
+  console.log                             
+    Get account details request: 4        
+
+      at log (controllers/accountController.js:48:11)
+
+  console.log                             
+    Account details: { id: 4, name: 'Test User', balance: 100 }
+
+      at log (controllers/accountController.js:53:11)
+
+ PASS  tests/account.test.js
+  Account API
+    √ should create an account (52 ms)    
+    √ should deposit money into account (16 ms)                                     
+    √ should withdraw money from account (16 ms)                                    
+Snapshots:   0 total
+Time:        0.59 s, estimated 1 s
+Ran all test suites.
+Jest did not exit one second after the test run has completed.
+
+'This usually means that there are asynchronous operations that weren't stopped in your tests. Consider running Jest with `--detectOpenHandles` to troubleshoot this issue.
